@@ -3,11 +3,14 @@ var highScores=function(game){
 }
 
 highScores.prototype={
+
 	init: function(){
+
 		this.getScores();
 	},
+
 	create: function(){
-		this.game.add.image(this.game.world.centerX, this.game.world.centerY, "background").anchor.set(0.6, 0.5);
+		this.game.add.image(this.game.world.centerX, this.game.world.centerY, "background").anchor.set(0.5, 0.5);
 		var highScoreText=this.game.add.text(400, 50, "Scatter Bag High Scores", {font: "35px Arial", fill: "#000000", align: "center"});
 		highScoreText.anchor.setTo(0.5, 0.5);
 		var gameMenuButton=this.game.add.button(400, 420, "gameMenu", this.launchGameMenu);
@@ -21,6 +24,7 @@ highScores.prototype={
 			yOffset+=30;
 		}
 	},
+
 	getScores: function(){
 		$.ajax({
 			url: "index.php",
@@ -30,6 +34,7 @@ highScores.prototype={
 			scores=result.scores;
 		});
 	},
+
 	launchGameMenu: function(){
 		this.game.state.start("GameMenu");
 	}

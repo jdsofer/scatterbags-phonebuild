@@ -1,6 +1,7 @@
 var preload=function(game){}
 
 preload.prototype={
+
 	preload: function(){
 		/*var preloadBackground=this.add.image(400, 300, "background");
 		preloadBackground.anchor.setTo(0.5, 0.5);*/
@@ -20,6 +21,7 @@ preload.prototype={
 		this.game.load.image("playAgain", "assets/playAgain.png");
 		this.game.load.image("submit", "assets/submit.png");
 	},
+	
 	create: function(){
 		this.game.state.start("GameMenu");
 	}

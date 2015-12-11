@@ -14,7 +14,11 @@ theGame.prototype={
 		livesLeft=3;
 	},
 	create: function(){
-		this.game.add.image(this.game.world.centerX, this.game.world.centerY, "background").anchor.set(0.6, 0.5);
+
+		var w = window.innerWidth * window.devicePixelRatio;
+		var h = window.innerHeight * window.devicePixelRatio;
+
+		this.game.add.image(this.game.world.centerX, this.game.world.centerY, "background").anchor.set(0.5, 0.5);
 
 		this.game.physics.startSystem(Phaser.Physics.P2JS);
 		this.game.physics.p2.gravity.y=200;
