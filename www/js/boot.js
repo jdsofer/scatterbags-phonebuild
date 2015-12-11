@@ -1,5 +1,7 @@
 var boot=function(game){
+
 	console.log("Starting Scatter Bag...");
+
 };
 
 boot.prototype={
@@ -9,25 +11,6 @@ boot.prototype={
 	},
 
   	create: function(){
-
-  		/*
-		this.scale.scaleMode=Phaser.ScaleManager.SHOW_ALL;
-		//this.game.scale.setShowAll();
-
-		this.scale.minWidth = 400;
-		this.scale.minHeight = 300;
-		this.scale.maxWidth = 1600;
-		this.scale.maxHeight = 1200;
-
-		//this.scale.minWidth = 400;
-		//this.scale.minHeight = 300;
-		//this.scale.maxWidth = 1600;
-		//this.scale.maxHeight = 1200;
-
-		this.game.scale.refresh();
-		this.scale.pageAlignHorizontally=true;
-		this.scale.pageAlignVertically=true;
-		*/
 
 		var gameWidth = 800;
 		var gameHeight = 600;
@@ -57,7 +40,6 @@ boot.prototype={
         }
 
 		this.game.state.start("Preload");
-
 
 	}
 }

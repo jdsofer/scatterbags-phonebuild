@@ -1,4 +1,5 @@
 var theGame=function(game){
+
 	briefcaseChoices=["redBriefcase", "blueBriefcase", "greenBriefcase", "yellowBriefcase"];
 	lifeIcons=[];
 	currentBriefcases=[];
@@ -6,17 +7,17 @@ var theGame=function(game){
 	score=0;
 	livesLeft=3;
 	scoreText="";
+
 }
 
 theGame.prototype={
 	init: function(){
+
 		score=0;
 		livesLeft=3;
 	},
-	create: function(){
 
-		var w = window.innerWidth * window.devicePixelRatio;
-		var h = window.innerHeight * window.devicePixelRatio;
+	create: function(){
 
 		this.game.add.image(this.game.world.centerX, this.game.world.centerY, "background").anchor.set(0.5, 0.5);
 
@@ -96,6 +97,7 @@ theGame.prototype={
 			currentBriefcases.push(this.briefcase);
 		}
 	},
+
 	update: function(){
 		if(livesLeft==0){
 			this.game.state.start("GameOver", true, false, score);
@@ -179,11 +181,5 @@ theGame.prototype={
 				currentBriefcases[i].kill();
 				currentBriefcases.splice(i, 1);
 			}
-	},
-	/*launchGameOver: function(){
-		this.game.state.start("GameOver");
-	}*/
+	}
 };
-/*
-this.game.state.add("NewGame", gameState);
-this.game.state.start("NewGame");*/

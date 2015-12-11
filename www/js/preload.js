@@ -3,8 +3,7 @@ var preload=function(game){}
 preload.prototype={
 
 	preload: function(){
-		/*var preloadBackground=this.add.image(400, 300, "background");
-		preloadBackground.anchor.setTo(0.5, 0.5);*/
+
 		this.game.load.image("conveyorBelt", "assets/conveyorBelt.png");
 		this.game.load.image("lifeIcon", "assets/lifeIcon.png");
 		this.game.load.image("redBriefcase", "assets/redBriefcase.png");
@@ -23,6 +22,8 @@ preload.prototype={
 	},
 	
 	create: function(){
+
 		this.game.state.start("GameMenu");
 	}
+
 }

@@ -10,7 +10,9 @@ highScores.prototype={
 	},
 
 	create: function(){
+
 		this.game.add.image(this.game.world.centerX, this.game.world.centerY, "background").anchor.set(0.5, 0.5);
+		
 		var highScoreText=this.game.add.text(400, 50, "Scatter Bag High Scores", {font: "35px Arial", fill: "#000000", align: "center"});
 		highScoreText.anchor.setTo(0.5, 0.5);
 		var gameMenuButton=this.game.add.button(400, 420, "gameMenu", this.launchGameMenu);
