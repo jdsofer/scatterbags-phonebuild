@@ -29,7 +29,8 @@ highScores.prototype={
 
 	getScores: function(){
 		$.ajax({
-			url: "index.php",
+			url: "http://52.33.222.116/scatterbags/index.php",
+			crossDomain: true,
 			method: "GET",
 			async: false
 		}).done(function(result){
