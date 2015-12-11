@@ -19,21 +19,10 @@
 		<script src="js/gameOver.js"></script>
 		<script src="js/highScores.js"></script>
 		<script>
+		
 			(function(){
 
-				console.log(window.innerWidth);
-				console.log(window.devicePixelRatio);
-				console.log(window.innerHeight);
-				console.log(window.devicePixelRatio);
-
-				var w = window.innerWidth * window.devicePixelRatio;
-				var h = window.innerHeight * window.devicePixelRatio;
-
-				//var w = window.screen.width;
-				//var h = window.screen.height;
-
 				var game = new Phaser.Game(800, 600, Phaser.CANVAS, '');
-
 				game.state.add("Boot", boot);
 				game.state.add("Preload", preload);
 				game.state.add("GameMenu", gameMenu);
@@ -41,18 +30,12 @@
 				game.state.add("GameOver", gameOver);
 				game.state.add("HighScores", highScores);
 				game.state.start("Boot");
+				
 			})();
+			
 		</script>
     </head>
     <body>
-    	<!--
-
-    	<center>
-    	<div id="gameWindow"></div>
-    	</center>
-
-    	-->
-
         <script type="text/javascript">
             app.initialize();
         </script>
