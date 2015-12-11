@@ -36,7 +36,7 @@ Going into this project, our group knew very little about game development and e
 - Made the falling luggage be one of four different colors: 1-2 hours.
 - Added four different colored bins to catch the falling objects. 1-2 hours.
 - Added score / counter for briefcases that fall into the right bin. 1 hour.
-- Rewrote the game to support state transitions ("Main Menu Screen", "Game Screen Screen", "Game Over Screen", "High Scores List"): 8 hours.
+- Rewrote the game to support state transitions ("Main Menu Screen", "Game Screen", "Game Over Screen", "High Scores List"): 8 hours.
 - Added mobile touch support: 1 hour.
 - PhoneGapped application and added logic to support different screen sizes: 6 hours.
 - Server-side development (posting and getting scores): 10 hours.
