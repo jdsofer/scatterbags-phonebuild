@@ -18,19 +18,15 @@ gameOver.prototype={
 
 		var person = prompt("Enter your name!");
 
-		var data = {"name": person,
-					"score": this.score 
-		}
-		
-		console.log(data);
+		var postData = {"name": person, "score": this.score};
 
 		if (person != null) {
 			$.ajax({
 				type: "POST",
-				contentType: "application/json",
 				async: false,
-				url: "index.php",
-				data: JSON.stringify(data)
+				crossDomain: true,
+				url: "http://52.33.222.116/scatterbags/post.php",
+				data: {"myData" : postData}
 			});
 		}
 
