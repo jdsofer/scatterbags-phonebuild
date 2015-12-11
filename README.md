@@ -46,7 +46,7 @@ Going into this project, our group knew very little about game development and e
 
 - Add different levels of difficulty, e.g., "easy", "medium", "hard".
 - Add game music.
-- Refine sprites for higher resolution screens
+- Refine sprites for higher resolution screens.
 
 ## Special Thanks
 
