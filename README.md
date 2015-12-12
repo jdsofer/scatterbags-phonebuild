@@ -1,15 +1,15 @@
 # Scatter Bag
 
-Scatter Bag is a simple and fun HTML5 game. The goal of the game is to get each falling briefcase onto the platform that matches its color.
+Scatter Bag is a simple and fun HTML5 game. The goal of the game is to get each falling, colored briefcase into the cart that matches its color.
 
-**NOTE: The framework we used appears to have some bugs in Google Chrome. We recommend playing on Firefox, Safari, or Microsoft Edge (not Internet Explorer).**
+**NOTE: The framework we used appears to have some bugs in Google Chrome. We recommend playing on Firefox, Safari, or Edge (not Internet Explorer).**
 
 ## Controls
 
 The player controls the three ledges in the middle of the screen.
 
 - Desktop: Left and right arrow keys
-- Mobile: Touch and hold left or right half of the screen
+- Mobile: Touch and hold the left or right half of the screen
 
 ## Research
 
@@ -33,8 +33,8 @@ Going into this project, our group knew very little about game development and e
 ## Work Done Since First Milestone
 
 - Made each falling briefcase be one of four different colors: 1-2 hours.
-- Added four different colored platforms to "catch" the falling objects: 1-2 hours.
-- Added score mechanism for briefcases that fall onto the right platform: 1 hour.
+- Added four different colored carts to "catch" the falling objects: 1-2 hours.
+- Added score mechanism for briefcases that fall into the right cart: 1 hour.
 - Rewrote the game to support state transitions ("Main Menu Screen", "Game Screen", "Game Over Screen", "High Scores List"): 8 hours.
 - Added mobile/touch support: 1 hour.
 - PhoneGapped the application and added logic to support different screen sizes: 6 hours.
@@ -43,7 +43,7 @@ Going into this project, our group knew very little about game development and e
 
 ## Future Improvements
 
-- Add different levels of difficulty, e.g., "Easy", "Medium", and "Hard" (by changing the time interval/"gravityScale").
+- Add different levels of difficulty, e.g., "easy", "medium", and "hard" (by changing the time interval/"gravityScale").
 - Add game music.
 - Refine sprites for higher resolution screens.
 
